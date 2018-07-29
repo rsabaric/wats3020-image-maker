@@ -31,18 +31,18 @@ class ImageMaker {
         this.bottomText.setAttribute('class','bottom-text');
 
         // TODO: Append `this.bottomText` as a child element to `this.imagePreview`
-
+        this.imagePreview.apendChild(this.bottomText);
         // This class also needs to use the form fields to read user input. Set
         // those up for future use, too.
 
         // TODO: Select the `input` element with the `name` attribute "backgroundImage"
-        this.backgroundInput = ;
+        this.backgroundInput = document.querySelector('select[name="backgroundImage"]');
 
         // TODO: Select the `input` element with the `name` attribute "topText"
-        this.topTextInput = ;
+        this.topTextInput = document.querySelector('input[name="topText"]');
 
         // TODO: Select the `input` element with the `name` attribute "bottomText"
-        this.bottomTextInput = ;
+        this.bottomTextInput = document.querySelector('input[name="bottomText"]');
 
         // NOTE: If you add additional form fields to modify other aspects of
         // the image, then you will need to make attributes for each of those
@@ -56,13 +56,13 @@ class ImageMaker {
         // update `this.imagePreview`.
 
         // TODO: Update the `background-image` CSS property for `this.imagePreview`.
-
+        this.imagePreview.style.backgroundImage = `url(images/${this.backgroundInput.value})`;
         // TODO: Update the `innerHTML` of `this.topText`.
-
+        this.topText.innerHTML = this.topTextInput.value;
         // TODO: Update the `innerHTML` of `this.bottomText`
-
-
-    }
+        this.bottomText.innerHTML = this.bottomTextInput.Value;
+ 
+ }
     downloadImage(){
         this.drawPreview();
         generateImage();
