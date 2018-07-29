@@ -31,7 +31,7 @@ class ImageMaker {
         this.bottomText.setAttribute('class','bottom-text');
 
         // TODO: Append `this.bottomText` as a child element to `this.imagePreview`
-        this.imagePreview.apendChild(this.bottomText);
+        this.imagePreview.appendChild(this.bottomText);
         // This class also needs to use the form fields to read user input. Set
         // those up for future use, too.
 
