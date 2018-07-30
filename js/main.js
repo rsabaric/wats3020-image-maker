@@ -60,7 +60,7 @@ class ImageMaker {
         // TODO: Update the `innerHTML` of `this.topText`.
         this.topText.innerHTML = this.topTextInput.value;
         // TODO: Update the `innerHTML` of `this.bottomText`
-        this.bottomText.innerHTML = this.bottomTextInput.Value;
+        this.bottomText.innerHTML = this.bottomTextInput.value;
  
  }
     downloadImage(){
