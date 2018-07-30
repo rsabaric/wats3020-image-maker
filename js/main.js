@@ -17,6 +17,7 @@ class ImageMaker {
 
         // TODO: Select the `#image-preview` div using any document selector method.
         this.imagePreview = document.getElementById('image-preview');
+        this.fontColor = document.getElementById('fontColor');
 
         // TODO: create a new `<p>` element called `this.topText`
         this.topText = document.createElement ('p');
@@ -43,6 +44,8 @@ class ImageMaker {
 
         // TODO: Select the `input` element with the `name` attribute "bottomText"
         this.bottomTextInput = document.querySelector('input[name="bottomText"]');
+        this.fontColorInput = document.querySelector('select[name="fontColor"]');
+      
 
         // NOTE: If you add additional form fields to modify other aspects of
         // the image, then you will need to make attributes for each of those
@@ -61,6 +64,8 @@ class ImageMaker {
         this.topText.innerHTML = this.topTextInput.value;
         // TODO: Update the `innerHTML` of `this.bottomText`
         this.bottomText.innerHTML = this.bottomTextInput.value;
+        console.log(this.fontColorInput.value);
+        this.imagePreview.style.color = this.fontColorInput.value;
  
  }
     downloadImage(){
