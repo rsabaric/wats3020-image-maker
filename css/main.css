@@ -36,6 +36,13 @@
     z-index: 1000;
 }
 
+input[type="submit"] {
+    border-radius: 2px;
+}
+
+input[type="submit"]:hover{
+    background-color: white;
+}
 /* General structure styles */
 body {
     font-family: Times, sans-serif;
