@@ -16,6 +16,7 @@ class ImageMaker {
         // Set attributes that point to the HTML elements we wish to work with.
 
         // Select the `#image-preview` div using any document selector method.
+        // Added fontType and fontColor elements
         this.imagePreview = document.getElementById('image-preview');
         this.fontType = document.getElementById('fontType');
         this.fontColor = document.getElementById('fontColor');
@@ -45,6 +46,8 @@ class ImageMaker {
 
         // Selected the `input` element with the `name` attribute "bottomText"
         this.bottomTextInput = document.querySelector('input[name="bottomText"]');
+        
+        // Added additional select elements
         this.fontColorInput = document.querySelector('select[name="fontColor"]');
         this.fontTypeInput = document.querySelector('select[name="fontType"]');
 
@@ -65,7 +68,7 @@ class ImageMaker {
         this.topText.innerHTML = this.topTextInput.value;
         // Updated the `innerHTML` of `this.bottomText`
         this.bottomText.innerHTML = this.bottomTextInput.value;
-    
+        // Added font color and type elements
         this.imagePreview.style.color = this.fontColorInput.value;
         this.imagePreview.style.fontFamily = this.fontTypeInput.value;
  }
